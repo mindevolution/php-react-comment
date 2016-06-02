@@ -3,11 +3,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var $ = require('jquery');
 
-var data = [
-	{id: 1, author: "Peniel He", text: "This is one comment"},
-	{id: 2,	author: "Jordan Walke", text: "This is *another* comment"}
-];
-
 var CommentList = React.createClass({
 	render: function() {
 		var commentNodes = this.props.data.map(function(comment) {
